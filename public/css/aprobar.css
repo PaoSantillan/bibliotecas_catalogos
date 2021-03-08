@@ -1,0 +1,662 @@
+:root{
+    --Open: 'Open Sans', sans-serif;
+    --Play: 'Playfair Display', serif;
+
+    --negro: #171717;
+    --verde: #1ebb90;
+    --blanco: #ffffff;
+    --verde-dark: #1ba881;
+    --gris-claro: #eff1f4;
+    --azul: #162a50;
+    --celeste: #50a9d0;
+    --celeste-dark: #1c99b9;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--Open);
+}
+
+
+/*---------------------------------------------------------------------------------------------
+--  L O G I N   U I
+----------------------------------------------------------------------------------------------*/
+
+#login{
+    background:url('../img/bg-login.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#login img{
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+}
+
+.wrap-login{
+    background: var(--blanco);
+    height: 340px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 230px;
+    position: relative;
+}
+
+.wrap-login h5{
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    color: var(--negro);
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wrap-login h6{
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: var(--negro);
+    line-height: 1;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wrap-login form{
+    position: relative;
+    top: 100px;
+    width: 70%;
+    margin: auto;
+}
+
+.wrap-login form input.in-date{
+    height: 30px;
+    background: var(--blanco);
+    font-size: 14px;
+    border: 1px solid var(--negro);
+}
+
+.wrap-login form .check-date{
+    font-weight: 400;
+    color: var(--negro);
+    font-size: 12px;
+}
+
+.wrap-login form a{
+    font-weight: 400;
+    color: var(--negro);
+    font-size: 12px;
+}
+
+.wrap-login form p{
+    font-weight: 400;
+    color: var(--negro);
+    font-size: 12px;
+    width: 100%;
+    margin-bottom: 0;
+    position: absolute;
+    top: 170px;
+    text-align: center;
+}
+
+.wrap-login button{
+    background: var(--celeste);
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--blanco);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+}
+
+.mt-n6{
+    margin-top: -6px;
+}
+
+/*---------------------------------------------------------------------------------------------
+-- D A S H B O A R D
+----------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------- WSP */
+.btn-wsp{
+    height: 60px;
+    width: 60px;
+    background: var(--verde-dark);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.18);
+}
+
+.btn-wsp i{
+    font-size: 30px;
+    color: var(--blanco);
+    font-weight: 500;
+}
+
+
+.btn-wsp:hover{
+    background: var(--blanco);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.18);
+    transition: 0.6s ease-in;
+}
+
+.btn-wsp:not(hover){
+    transition: 0.6s ease-in;
+}
+
+.btn-wsp:hover i{
+    color: var(--verde-dark);
+    transition: 0.4s ease-in;
+}
+
+.btn-wsp:not(hover) i{
+    transition: 0.4s ease-in;
+}
+
+
+.c-sidebar-aprobar{
+    background: var(--celeste);
+}
+
+.c-sidebar-brand{
+    background: var(--blanco) !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.c-sidebar-brand .c-sidebar-brand-full{
+    width: 80%;
+}
+
+.header-aprobar{
+    top: 20px !important;
+    width: 90%;
+    height: 50px !important;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.c-header, .c-header-nav{
+    min-height: 50px;
+}
+
+.header-nom{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.header-nom span{
+    font-weight: 600;
+}
+
+.bell-header{
+    height: 18px;
+}
+
+.c-avatar-img-aux{
+    height: 7px;
+    margin-left: 3px;
+}
+
+.c-base-bg-aprobar{
+    background: url('../img/base-main-100.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.c-sidebar-nav-link{
+    font-size: 12px;
+}
+
+.c-sidebar-nav-title h6{
+    font-size: 13px;
+    border-bottom: 1px solid var(--blanco);
+    color: var(--blanco);
+    padding-bottom: 5px;
+
+}
+
+.wrap-base{
+    background: var(--blanco);
+    min-height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 0.875rem 0 rgba(41,48,66,.05);
+    border: 0 solid transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.fix-w{
+    width: 95%;
+    margin: auto;
+}
+
+.wrap-base h6.saludo{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.wrap-base h6.aux-saludo{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.imagen-home{
+    background: url('../img/bg-lib.jpg') no-repeat center center;
+    background: cover;
+    width: 100%;
+    height: 500px;
+    width: 95%;
+    margin: auto;
+}
+
+form.aprobar-form input, form.aprobar-form textarea{
+    font-size: 14px;
+}
+
+form .btn-subir{
+    font-size: 12px;
+    width: 100%;
+}
+
+.titulo-seccion{
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 2px solid var(--celeste);
+    width: 100%;
+    padding-bottom: 7px;
+}
+
+.titulo-seccion i{
+    color: var(--celeste-dark);
+    font-weight: 700;
+}
+
+.info-sec-tit{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.info-seccion-aux{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.form-label{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form-text{
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.btn-celeste-dash{
+    width: 100%;
+    background: var(--celeste);
+}
+
+.btn-celeste-dash-2{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    background: var(--celeste);
+}
+
+
+
+.tabla-aprobar{
+    font-size: 14px;
+}
+
+.tabla-aprobar a{
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.archivo-title{
+    font-size: 14px;
+}
+
+.detalle-archivo{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.svg-file{
+    height: 100px;
+    margin-left: 20px;
+}
+
+.ml-20p{
+    margin-left: 20px;
+}
+
+/*---------------------------------------------------------------------------------------------
+-- A L U M N O   U I
+---------------------------------------------------------------------------------------------*/
+
+.wrap-curso{
+    height: 321px;
+    width: 240px;
+    background: red;
+    border-radius: 5px;
+    position: relative;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.wrap-curso:hover .botones{
+    display: block;
+}
+
+.bg-bio{
+    background: url('../img/bio-100.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.wrap-curso img{
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    border-radius: 50%;
+}
+
+.wrap-curso .prof{
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 300;
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+}
+
+.wrap-curso .curso-nombre{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    border-bottom: 1px solid #ffffff;
+    width: 85%;
+}
+
+.wrap-curso .instit{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    
+}
+
+.wrap-curso .etiqueta-num{
+    background: var(--verde);
+    padding: 5px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    position: absolute;
+    right: -10px;
+    top: -7px;
+}
+
+.pl-30{
+    padding-left: 30px;
+}
+
+.pl-50{
+    padding-left: 50px;
+}
+
+.fix-ondas-opz{
+    height: 1500px !important;
+}
+
+.mt-30p{
+    margin-top: 30px;
+}
+
+/* .video-frame iframe{
+    width: 100%;
+    height: 600px;
+} */
+
+/*------------------------------------------------------------------------ Tablas dinámicas */
+#buscarCurso th, #buscarClase th, #buscarContenidos th{
+    font-size: 14px;
+}
+
+#buscarCurso td, #buscarClase td, #buscarContenidos td{
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+
+
+ /*-------------------------------------------------------------------------- Cometarios */
+ .perfil-com{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+.box-com{
+    height: 70px;
+    position: relative;
+}
+
+.titulo-com{
+    font-weight: 700;
+    font-size: 15px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-left: 15px;
+}
+
+.enlace-com{
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.enlace-com:hover{
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.text-com{
+    padding-left: 15px;
+    height: 50px;
+    width: 100%;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.autor-com{
+    position: absolute;
+    bottom: 5px;
+    left: 29px;
+    color: var(--celeste-dark);
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.datos-com{
+    font-weight: 300;
+    color: var(--negro);
+}
+
+.text-com-modal{
+    font-size: 15px;
+}
+
+.titulo-com-modal{
+    font-weight: 700;
+    font-size: 15px;
+    
+}
+
+.num-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.num-com{
+    color: var(--celeste);
+}
+
+.btn-comentarios{
+    border-radius: 20px;
+    font-size: 15px;
+    margin: auto;
+    width: auto;
+}
+/*---------------------------------------------------- Listar Cursos alumno */
+.item-curso-info{
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.item-curso-info:hover{
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.item-curso{
+    padding: 5px;
+    width: 100%;
+    border: 2px solid var(--gris-claro);
+    padding-top: 20px;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.item-curso:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.199);
+    text-shadow: none;
+    transition: 0.4s ease-in;
+    border-right: 3px solid var(--verde);
+}
+
+.item-curso:not(hover){
+    transition: 0.4s ease-in;
+}
+
+.item-curso:hover .icono-big i{
+    background: var(--verde);
+    color: var(--blanco);
+    transition: 0.4s ease-in;
+}
+
+.item-curso:not(hover) .icono-big i{
+    transition: 0.4s ease-in;
+}
+
+.icono-big i{
+    background: yellow;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.item-curso h6{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+    padding-left: 32px;
+}
+
+.item-curso h6.aux-text{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 0;
+    padding-left: 32px;
+}
+
+/*---------------------------------------------- Matricular alumnos */
+#matricularAlumno td, #tespera td, #taprobado td{
+    font-size: 14px;
+    vertical-align: center;
+}
+
+#matricularAlumno th, #tespera th, #taprobado th{
+    font-size: 14px;
+}
+
+#matricularAlumno_wrapper label{
+    font-size: 14px !important;
+}
+
+#matricularAlumno_wrapper .dataTables_info{
+    font-size: 12px !important;
+}
+
+.contador-text{
+    font-size: 14px;
+    color: var(--verde-dark);
+}
+
+.btn-small-round{
+    border-radius: 15px;
+    width: auto;
+}
+
+
+
+
+
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .wrap-login {
+        background: var(--blanco);
+        height: 280px;
+        border-radius: 5px;
+        width: 100%;
+        margin-top: 230px;
+        position: relative;
+    }
+ }
