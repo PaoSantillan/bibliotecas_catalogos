@@ -32,6 +32,7 @@ class CreateEjemplaresTable extends Migration
             $table->string('volumen')->nullable();
             $table->string('donado')->nullable();
             $table->string('editorial')->nullable();
+            $table->boolean('mostrar')->default(true);
             $table->timestamps();
             $table->softDeletes();
         });

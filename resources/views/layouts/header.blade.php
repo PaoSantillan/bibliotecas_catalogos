@@ -3,7 +3,6 @@
     <i class="c-icon c-icon-lg cil-menu"></i>
 </button>
 <a class="c-header-brand d-lg-none c-header-brand-sm-up-center" href="#">
-    <!-- <img src="https://infyom.com/images/logo/logo_236w.png" width="118" alt="Brand Logo"> -->
 </a>
 <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar"
         data-class="c-sidebar-lg-show" responsive="true">
@@ -13,7 +12,7 @@
 </ul>
 <ul class="c-header-nav">
     <li class="c-header-nav-item">
-        <h6 class="header-nom">¡Hola, <span>{{ Auth::user()->name }}</span>!</h6>
+        <h6 class="header-nom">¡Hola, <span></span>!</h6>
     </li>
     <li class="c-header-nav-item mx-2">
     </li>
@@ -21,7 +20,6 @@
         <a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button"
            aria-haspopup="true" aria-expanded="false">
             <div class="c-avatar">
-                <!--<img class="c-avatar-img" src="{{ asset('img/foto-perfil.png')}}" alt="">-->
                 <img class="c-avatar-img-aux" src="{{ asset('img/flecha.svg')}}" alt="">
             </div>
         </a>

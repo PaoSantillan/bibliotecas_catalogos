@@ -13,6 +13,7 @@ En el presente proyecto se trabajó con:
 - 4.- Generar la key, en la terminal: php artisan key:generate
 - 5.- Crear migraciones, en la terminal: php artisan migrate
 - 6.- Ejecutar las seeds, en la terminal: php artisan db:seed
+- 7.- Levantar con: php artisan serve
 
 ## Login
 ADMIN:

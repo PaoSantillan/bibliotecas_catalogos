@@ -1,9 +1,8 @@
-<div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show c-sidebar-aprobar" id="sidebar">
+<div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show c-sidebar-cat" id="sidebar">
     <div class="c-sidebar-brand d-md-down-none">
-        <img src="{{ asset('img/logofullcolor.svg')}}" 
-             class="c-sidebar-brand-full" alt="Brand Logo">
-        <img src="{{ asset('img/logocolorsmall.svg')}}" width="40" 
-             class="c-sidebar-brand-minimized" alt="Brand Logo">
+        <img src="{{ asset('img/logo.jpg')}}" 
+             class="c-sidebar-brand-full" alt="Brand Logo" style="width:100%;
+    max-width:100px;">
     </div>
     <ul class="c-sidebar-nav">
         @include('layouts.menu')

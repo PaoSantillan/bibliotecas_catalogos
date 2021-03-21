@@ -1,5 +1,5 @@
 :root{
-    --Open: 'Open Sans', sans-serif;
+    --Open: "Poppins", sans-serif;
     --Play: 'Playfair Display', serif;
 
     --negro: #171717;
@@ -12,13 +12,15 @@
     --celeste-dark: #1c99b9;
 }
 
-
 *{
     margin: 0;
     padding: 0;
-    font-family: var(--Open);
+    font-family: 'Ubuntu', serif;
 }
 
+.c-app{
+    background: #EDF2FF;
+}
 
 /*---------------------------------------------------------------------------------------------
 --  L O G I N   U I
@@ -51,9 +53,9 @@
 
 .wrap-login h5{
     font-weight: 700;
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
-    color: var(--negro);
+    color: #171717;
     position: absolute;
     top: 25px;
     left: 50%;
@@ -62,9 +64,9 @@
 
 .wrap-login h6{
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     text-align: center;
-    color: var(--negro);
+    color: #171717;
     line-height: 1;
     position: absolute;
     top: 50px;
@@ -82,26 +84,26 @@
 .wrap-login form input.in-date{
     height: 30px;
     background: var(--blanco);
-    font-size: 14px;
-    border: 1px solid var(--negro);
+    font-size: 15px;
+    border: 1px solid #171717;
 }
 
 .wrap-login form .check-date{
     font-weight: 400;
-    color: var(--negro);
-    font-size: 12px;
+    color: #171717;
+    font-size: 13px;
 }
 
 .wrap-login form a{
     font-weight: 400;
-    color: var(--negro);
-    font-size: 12px;
+    color: #171717;
+    font-size: 13px;
 }
 
 .wrap-login form p{
     font-weight: 400;
-    color: var(--negro);
-    font-size: 12px;
+    color: #171717;
+    font-size: 13px;
     width: 100%;
     margin-bottom: 0;
     position: absolute;
@@ -112,7 +114,7 @@
 .wrap-login button{
     background: var(--celeste);
     border: none;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     color: var(--blanco);
     padding-top: 4px;
@@ -133,55 +135,12 @@
 -- D A S H B O A R D
 ----------------------------------------------------------------------------------------------*/
 
-/*------------------------------------------------------------- WSP */
-.btn-wsp{
-    height: 60px;
-    width: 60px;
-    background: var(--verde-dark);
-    border-radius: 50%;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.18);
-}
-
-.btn-wsp i{
-    font-size: 30px;
-    color: var(--blanco);
-    font-weight: 500;
-}
-
-
-.btn-wsp:hover{
-    background: var(--blanco);
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.18);
-    transition: 0.6s ease-in;
-}
-
-.btn-wsp:not(hover){
-    transition: 0.6s ease-in;
-}
-
-.btn-wsp:hover i{
-    color: var(--verde-dark);
-    transition: 0.4s ease-in;
-}
-
-.btn-wsp:not(hover) i{
-    transition: 0.4s ease-in;
-}
-
-
-.c-sidebar-aprobar{
-    background: var(--celeste);
+.c-sidebar-cat{
+    background: #3578E5;
 }
 
 .c-sidebar-brand{
-    background: var(--blanco) !important;
+    background: #1D3C78 !important;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -190,7 +149,7 @@
     width: 80%;
 }
 
-.header-aprobar{
+.header{
     top: 20px !important;
     width: 90%;
     height: 50px !important;
@@ -203,7 +162,7 @@
 }
 
 .header-nom{
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
     margin-bottom: 0;
 }
@@ -221,17 +180,17 @@
     margin-left: 3px;
 }
 
-.c-base-bg-aprobar{
+.c-base-bg{
     background: url('../img/base-main-100.jpg') no-repeat center center;
     background-size: cover;
 }
 
 .c-sidebar-nav-link{
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .c-sidebar-nav-title h6{
-    font-size: 13px;
+    font-size: 14px;
     border-bottom: 1px solid var(--blanco);
     color: var(--blanco);
     padding-bottom: 5px;
@@ -258,13 +217,13 @@
 
 .wrap-base h6.saludo{
     font-weight: 600;
-    font-size: 16px;
+    font-size: 17px;
     margin-bottom: 0;
 }
 
 .wrap-base h6.aux-saludo{
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 0;
 }
 
@@ -278,51 +237,51 @@
 }
 
 form.aprobar-form input, form.aprobar-form textarea{
-    font-size: 14px;
+    font-size: 15px;
 }
 
 form .btn-subir{
-    font-size: 12px;
+    font-size: 13px;
     width: 100%;
 }
 
 .titulo-seccion{
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 600;
-    border-bottom: 2px solid var(--celeste);
+    border-bottom: 2px solid #1877F2;
     width: 100%;
     padding-bottom: 7px;
 }
 
 .titulo-seccion i{
-    color: var(--celeste-dark);
+    color: #1877F2;
     font-weight: 700;
 }
 
 .info-sec-tit{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     margin-bottom: 0;
 }
 .info-seccion-aux{
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
     margin-bottom: 0;
 }
 
 .form-label{
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
 }
 
 .form-text{
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 400;
 }
 
 .btn-celeste-dash{
     width: 100%;
-    background: var(--celeste);
+    background: #1877F2;
 }
 
 .btn-celeste-dash-2{
@@ -330,28 +289,28 @@ form .btn-subir{
     padding-bottom: 3px;
     padding-left: 25px;
     padding-right: 25px;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
-    background: var(--celeste);
+    background: #1877F2;
 }
 
 
 
 .tabla-aprobar{
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .tabla-aprobar a{
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .archivo-title{
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .detalle-archivo{
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 300;
 }
 
@@ -399,7 +358,7 @@ form .btn-subir{
 
 .wrap-curso .prof{
     color: #ffffff;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 300;
     position: absolute;
     bottom: 70px;
@@ -408,7 +367,7 @@ form .btn-subir{
 
 .wrap-curso .curso-nombre{
     color: #ffffff;
-    font-size: 25px;
+    font-size: 26px;
     font-weight: 700;
     position: absolute;
     bottom: 30px;
@@ -419,7 +378,7 @@ form .btn-subir{
 
 .wrap-curso .instit{
     color: #ffffff;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 300;
     position: absolute;
     bottom: 10px;
@@ -431,9 +390,9 @@ form .btn-subir{
     background: var(--verde);
     padding: 5px 25px;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 17px;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
     position: absolute;
     right: -10px;
@@ -463,105 +422,23 @@ form .btn-subir{
 
 /*------------------------------------------------------------------------ Tablas dinámicas */
 #buscarCurso th, #buscarClase th, #buscarContenidos th{
-    font-size: 14px;
+    font-size: 15px;
 }
 
 #buscarCurso td, #buscarClase td, #buscarContenidos td{
-    font-size: 14px;
+    font-size: 15px;
     vertical-align: middle;
 }
 
-
-
- /*-------------------------------------------------------------------------- Cometarios */
- .perfil-com{
-    border-radius: 50%;
-    height: 80px;
-    width: 80px;
-}
-
-.box-com{
-    height: 70px;
-    position: relative;
-}
-
-.titulo-com{
-    font-weight: 700;
-    font-size: 15px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    padding-left: 15px;
-}
-
-.enlace-com{
-    text-decoration: none;
-    color: var(--negro);
-}
-
-.enlace-com:hover{
-    text-decoration: none;
-    color: var(--negro);
-}
-
-.text-com{
-    padding-left: 15px;
-    height: 50px;
-    width: 100%;
-    font-size: 15px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.autor-com{
-    position: absolute;
-    bottom: 5px;
-    left: 29px;
-    color: var(--celeste-dark);
-    font-weight: 500;
-    font-size: 13px;
-}
-
-.datos-com{
-    font-weight: 300;
-    color: var(--negro);
-}
-
-.text-com-modal{
-    font-size: 15px;
-}
-
-.titulo-com-modal{
-    font-weight: 700;
-    font-size: 15px;
-    
-}
-
-.num-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.num-com{
-    color: var(--celeste);
-}
-
-.btn-comentarios{
-    border-radius: 20px;
-    font-size: 15px;
-    margin: auto;
-    width: auto;
-}
 /*---------------------------------------------------- Listar Cursos alumno */
 .item-curso-info{
     text-decoration: none;
-    color: var(--negro);
+    color: #171717;
 }
 
 .item-curso-info:hover{
     text-decoration: none;
-    color: var(--negro);
+    color: #171717;
 }
 
 .item-curso{
@@ -602,14 +479,14 @@ form .btn-subir{
 }
 
 .item-curso h6{
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 700;
     margin-bottom: 0;
     padding-left: 32px;
 }
 
 .item-curso h6.aux-text{
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
     margin-bottom: 0;
     padding-left: 32px;
@@ -617,24 +494,24 @@ form .btn-subir{
 
 /*---------------------------------------------- Matricular alumnos */
 #matricularAlumno td, #tespera td, #taprobado td{
-    font-size: 14px;
+    font-size: 15px;
     vertical-align: center;
 }
 
 #matricularAlumno th, #tespera th, #taprobado th{
-    font-size: 14px;
+    font-size: 15px;
 }
 
 #matricularAlumno_wrapper label{
-    font-size: 14px !important;
+    font-size: 15px !important;
 }
 
 #matricularAlumno_wrapper .dataTables_info{
-    font-size: 12px !important;
+    font-size: 13px !important;
 }
 
 .contador-text{
-    font-size: 14px;
+    font-size: 15px;
     color: var(--verde-dark);
 }
 
@@ -642,12 +519,6 @@ form .btn-subir{
     border-radius: 15px;
     width: auto;
 }
-
-
-
-
-
-
 
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {

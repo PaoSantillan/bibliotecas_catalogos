@@ -2,10 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Aprobar</title>
+    <title>Catálogos - Cultura Catamarca</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-    <!-- <link rel="icon" href="{{ asset('img/logocolorsmall.svg')}}" type="image/x-icon"> -->
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/logofullcolor.svg')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/logo.jpg')}}">
 
     <!-- CoreUI CSS & estilos -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}" crossorigin="anonymous">
@@ -18,7 +17,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/dropify.min.css') }}" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('css/aprobar.css') }}" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('css/catalogos.css') }}" crossorigin="anonymous">
 
     <!-- Tipografía -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -39,19 +38,14 @@
 <body class="c-app">
 @include('layouts.sidebar')
 
-<div class="c-wrapper c-base-bg-aprobar">
-    <header class="c-header c-header-light c-header-fixed header-aprobar">
+<div class="c-wrapper c-base-bg">
+    <header class="c-header c-header-light c-header-fixed header">
         @include('layouts.header')
     </header>
 
     <div class="c-body">
         <main class="c-main">
             @yield('content')
-            <a href="https://api.whatsapp.com/send?phone=+5491140424641">
-                <div class="btn-wsp">
-                    <i class="cib-whatsapp"></i>
-                </div>
-            </a>
         </main>
     </div>
 

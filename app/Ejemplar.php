@@ -32,7 +32,8 @@ class Ejemplar extends Model
         'ISBN',
         'volumen',
         'donado',
-        'editorial'
+        'editorial',
+        'mostrar'
     ];
 
     public function tipo(){
