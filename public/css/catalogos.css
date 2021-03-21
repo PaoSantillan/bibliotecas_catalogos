@@ -25,7 +25,7 @@
 /*---------------------------------------------------------------------------------------------
 --  L O G I N   U I
 ----------------------------------------------------------------------------------------------*/
-
+/*
 #login{
     background:url('../img/bg-login.jpg') no-repeat center center;
     background-size: cover;
@@ -130,10 +130,11 @@
 .mt-n6{
     margin-top: -6px;
 }
+*/
 
-/*---------------------------------------------------------------------------------------------
--- D A S H B O A R D
-----------------------------------------------------------------------------------------------*/
+/**
+* MENÚ LATERAL
+*/
 
 .c-sidebar-cat{
     background: #3578E5;
@@ -162,7 +163,7 @@
 }
 
 .header-nom{
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 300;
     margin-bottom: 0;
 }
@@ -186,7 +187,7 @@
 }
 
 .c-sidebar-nav-link{
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .c-sidebar-nav-title h6{
@@ -221,10 +222,11 @@
     margin-bottom: 0;
 }
 
-.wrap-base h6.aux-saludo{
+.wrap-base h6.msj-panel{
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .imagen-home{
@@ -293,8 +295,6 @@ form .btn-subir{
     font-weight: 600;
     background: #1877F2;
 }
-
-
 
 .tabla-aprobar{
     font-size: 15px;
@@ -415,11 +415,6 @@ form .btn-subir{
     margin-top: 30px;
 }
 
-/* .video-frame iframe{
-    width: 100%;
-    height: 600px;
-} */
-
 /*------------------------------------------------------------------------ Tablas dinámicas */
 #buscarCurso th, #buscarClase th, #buscarContenidos th{
     font-size: 15px;
@@ -520,7 +515,9 @@ form .btn-subir{
     width: auto;
 }
 
-/* // X-Small devices (portrait phones, less than 576px) */
+/*
+* RESPONSIVE
+*/
 @media (max-width: 575.98px) {
     .wrap-login {
         background: var(--blanco);

@@ -12,9 +12,7 @@
 </ul>
 <ul class="c-header-nav">
     <li class="c-header-nav-item">
-        <h6 class="header-nom">¡Hola, <span></span>!</h6>
-    </li>
-    <li class="c-header-nav-item mx-2">
+        <h6 class="header-nom">¡Hola, !</h6>
     </li>
     <li class="c-header-nav-item dropdown mr-3">
         <a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button"
