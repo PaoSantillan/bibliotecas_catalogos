@@ -5,11 +5,11 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class CommentLesson extends Model
+class Prestamo extends Model
 {
     use SoftDeletes;
 
-    protected $table = 'comment_lesson';
+    protected $table = 'prestamos';
     public $primaryKey = 'id';
     public $timestamps = true;
 
@@ -18,18 +18,24 @@ class CommentLesson extends Model
     protected $dates = ['deleted_at'];
 
     protected $fillable = [
-        'title',
-        'comment',
+        'socio_id',
+        'ejemplar_id',
         'user_id',
-        'lesson_id',
-        'status'
+        'fecha_prestamo',
+        'fecha_devolucion',
+        'observaciones',
+        'estado'
     ];
 
-    public function clase(){
-        return $this->belongsTo('App\Lesson', 'lesson_id', 'id');
+    public function socio(){
+        return $this->belongsTo('App\Socio', 'socio_id', 'id');
     }
 
-    public function usuario(){
+    public function ejemplar(){
+        return $this->belongsTo('App\Ejemplar', 'ejemplar_id', 'id');
+    }
+
+    public function user(){
         return $this->belongsTo('App\User', 'user_id', 'id');
     }
 }

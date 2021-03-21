@@ -25,7 +25,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'username', 'photo', 'phone'
+        'nombre', 'username', 'dni', 'email', 'password', 'telefono', 'foto'
     ];
 
     /**
@@ -85,13 +85,8 @@ class User extends Authenticatable
     public function getRoleName(){
         return $this->roles()->pluck('name')->toArray();
     }
-    /*public function course(){
-        return $this->hasMany('App\Course', 'user_id', 'id');
-    }*/
-    public function course(){
-        return $this->hasMany('App\CourseGeneral', 'user_id', 'id');
-    }
-    public function curso(){
-        return $this->belongsToMany('App\Course', 'course_student', 'user_id', 'course_id');
+
+    public function prestamos(){
+        return $this->hasMany('App\Prestamo', 'user_id', 'id');
     }
 }

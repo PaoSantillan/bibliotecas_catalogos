@@ -5,11 +5,11 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Content extends Model
+class Biblioteca extends Model
 {
     use SoftDeletes;
 
-    protected $table = 'contents';
+    protected $table = 'bibliotecas';
     public $primaryKey = 'id';
     public $timestamps = true;
 
@@ -18,17 +18,12 @@ class Content extends Model
     protected $dates = ['deleted_at'];
 
     protected $fillable = [
-        'course_id',
-        'attached',
-        'name',
-        'created_user_id'
+        'nombre',
+        'descripcion',
+        'direccion'
     ];
 
-    public function curso(){
-        return $this->belongsTo('App\Course', 'course_id', 'id');
-    }
-
-    public function user(){
-        return $this->belongsTo('App\User', 'created_user_id', 'id');
+    public function ejemplares(){
+        return $this->hasMany('App\Ejemplar', 'biblioteca_id', 'id');
     }
 }

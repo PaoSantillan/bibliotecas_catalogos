@@ -22,6 +22,7 @@ class CreatePrestamosTable extends Migration
             $table->unsignedInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->date('fecha_prestamo')->nullable();
+            $table->date('fecha_devolucion')->nullable();
             $table->string('observaciones')->nullable();
             $table->string('estado')->nullable();
             $table->timestamps();

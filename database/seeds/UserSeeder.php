@@ -16,11 +16,11 @@ class UserSeeder extends Seeder
     public function run()
     {
         $user = User::create([
-         "name" => "Super Admin",
-         "email" => "chxnge@hotmail.com",
-         "username" => "SAdmin",
-         "dni" => "98653245",
-         "password" => Hash::make('PSANTILLAN2020')
+         "nombre" => "Super Admin",
+         "email" => "super@super.com",
+         "username" => "admin",
+         "dni" => "33333333",
+         "password" => Hash::make('SUPERADMIN2021')
         ]);
 
         $user->roles()->attach(Role::where('name', 'super')->first());
