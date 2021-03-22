@@ -22,10 +22,7 @@
             </div>
         </a>
         <div class="dropdown-menu dropdown-menu-right pt-0">
-            <div class="dropdown-header bg-light py-2"><strong>Account</strong></div>
-            <a class="dropdown-item" href="#">
-                <i class="c-icon mfe-2 cil-user"></i>Profile
-            </a>
+            <div class="dropdown-header bg-light py-2"><strong>Cuenta</strong></div>
             <a class="dropdown-item" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 <i class="c-icon mfe-2 cil-account-logout"></i>Logout
             </a>

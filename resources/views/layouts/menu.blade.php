@@ -1,5 +1,5 @@
 <li class="c-sidebar-nav-item">
-    <a class="c-sidebar-nav-link c-active" href="/home">
+    <a class="c-sidebar-nav-link c-active" href="/ejemplares">
         <i class="c-sidebar-nav-icon cil-book"></i> Catálogos (ejemplares)
     </a>
 </li>
@@ -46,7 +46,7 @@
         <i class="c-sidebar-nav-icon cil-address-book"></i> Socios
     </a>
     <ul class="c-sidebar-nav-dropdown-items">
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/profesores"><span class="c-sidebar-nav-icon"></span> Socios creados</a></li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/socios"><span class="c-sidebar-nav-icon"></span> Socios creados</a></li>
         <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/alumnos"><span class="c-sidebar-nav-icon"></span> Crear socio</a></li>
     </ul>
 </li>
