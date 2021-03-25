@@ -22,8 +22,8 @@ class CreateSociosTable extends Migration
             $table->string('telefono',20)->nullable();
             $table->string('foto')->nullable();
             $table->string('email')->unique()->nullable();
-            $table->softDeletes();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

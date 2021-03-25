@@ -1,5 +1,5 @@
 <li class="c-sidebar-nav-item">
-    <a class="c-sidebar-nav-link c-active" href="/ejemplares">
+    <a class="c-sidebar-nav-link c-active" href="/catalogo">
         <i class="c-sidebar-nav-icon cil-book"></i> Catálogo de ejemplares
     </a>
 </li>
@@ -10,8 +10,8 @@
         <i class="c-sidebar-nav-icon cil-room"></i>Bibliotecas
     </a>
     <ul class="c-sidebar-nav-dropdown-items">
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/"><span class="c-sidebar-nav-icon"></span> Bibliotecas creadas</a></li>
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/"><span class="c-sidebar-nav-icon"></span> Crear biblioteca</a></li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/bibliotecas"><span class="c-sidebar-nav-icon"></span> Bibliotecas creadas</a></li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/bibliotecas/crear"><span class="c-sidebar-nav-icon"></span> Crear biblioteca</a></li>
     </ul>
 </li>
 <li class="c-sidebar-nav-item c-sidebar-nav-dropdown
@@ -20,8 +20,8 @@
         <i class="c-sidebar-nav-icon cil-description"></i> Tipos de ejemplares
     </a>
     <ul class="c-sidebar-nav-dropdown-items">
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/"><span class="c-sidebar-nav-icon"></span> Tipos de ejemplares creados</a></li>
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/"><span class="c-sidebar-nav-icon"></span> Crear tipo de ejemplar</a></li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/tiposEjemplares"><span class="c-sidebar-nav-icon"></span> Tipos de ejemplares creados</a></li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/tiposEjemplares/crear"><span class="c-sidebar-nav-icon"></span> Crear tipo de ejemplar</a></li>
     </ul>
 </li>
 <li class="c-sidebar-nav-item c-sidebar-nav-dropdown
@@ -30,8 +30,8 @@
         <i class="c-sidebar-nav-icon cil-book"></i> Ejemplares
     </a>
     <ul class="c-sidebar-nav-dropdown-items">
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/"><span class="c-sidebar-nav-icon"></span> Ejemplares creados</a></li>
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/"><span class="c-sidebar-nav-icon"></span> Crear ejemplar</a></li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/ejemplares"><span class="c-sidebar-nav-icon"></span> Ejemplares creados</a></li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/ejemplares/crear"><span class="c-sidebar-nav-icon"></span> Crear ejemplar</a></li>
     </ul>
 </li>
 @if(Auth::user()->hasRole('admin'))

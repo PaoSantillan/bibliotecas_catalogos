@@ -12,6 +12,10 @@
     --celeste-dark: #1c99b9;
 }
 
+/*
+* GENERAL
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -21,116 +25,6 @@
 .c-app{
     background: #EDF2FF;
 }
-
-/*---------------------------------------------------------------------------------------------
---  L O G I N   U I
-----------------------------------------------------------------------------------------------*/
-/*
-#login{
-    background:url('../img/bg-login.jpg') no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
-
-#login img{
-    position: absolute;
-    top: 160px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 250px;
-}
-
-.wrap-login{
-    background: var(--blanco);
-    height: 340px;
-    border-radius: 5px;
-    width: 100%;
-    margin-top: 230px;
-    position: relative;
-}
-
-.wrap-login h5{
-    font-weight: 700;
-    font-size: 16px;
-    text-align: center;
-    color: #171717;
-    position: absolute;
-    top: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.wrap-login h6{
-    font-weight: 400;
-    font-size: 13px;
-    text-align: center;
-    color: #171717;
-    line-height: 1;
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.wrap-login form{
-    position: relative;
-    top: 100px;
-    width: 70%;
-    margin: auto;
-}
-
-.wrap-login form input.in-date{
-    height: 30px;
-    background: var(--blanco);
-    font-size: 15px;
-    border: 1px solid #171717;
-}
-
-.wrap-login form .check-date{
-    font-weight: 400;
-    color: #171717;
-    font-size: 13px;
-}
-
-.wrap-login form a{
-    font-weight: 400;
-    color: #171717;
-    font-size: 13px;
-}
-
-.wrap-login form p{
-    font-weight: 400;
-    color: #171717;
-    font-size: 13px;
-    width: 100%;
-    margin-bottom: 0;
-    position: absolute;
-    top: 170px;
-    text-align: center;
-}
-
-.wrap-login button{
-    background: var(--celeste);
-    border: none;
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--blanco);
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 30px;
-    padding-right: 30px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 10px;
-}
-
-.mt-n6{
-    margin-top: -6px;
-}
-*/
 
 /**
 * MENÚ

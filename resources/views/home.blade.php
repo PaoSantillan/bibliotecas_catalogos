@@ -9,7 +9,7 @@
                         el listado de Catálogos de libros, revistas, etc. de las diferentes Bibliotecas municipales.
                     </h6><br>
                     <h6 class="msj-panel">
-                        Hace clic en el menú de la izquierda para conocerlos o hace clic <strong><a href="/ejemplares">aqui </a></strong>.
+                        Hace clic en el menú de la izquierda para conocerlos o hace clic <strong><a href="/catalogo">aqui </a></strong>.
                     </h6>
                 </div>
                 <input name="id_" id="id_" value="" style="display: none;">

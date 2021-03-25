@@ -18,8 +18,8 @@ class CreateBibliotecasTable extends Migration
             $table->string('nombre');
             $table->string('descripcion')->nullable();
             $table->string('direccion')->nullable();
-            $table->softDeletes();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

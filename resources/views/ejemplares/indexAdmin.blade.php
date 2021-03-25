@@ -14,33 +14,46 @@
                                 <table id="table" class="table table-striped table-hover align-middle">
                                     <thead>
                                         <tr>
-                                            <th>Ver</th>
                                             <th>Nro.</th>
                                             <th>Tipo</th>
                                             <th>Biblioteca</th>
-                                            <th>Dirección</th>
                                             <th>Titulo</th>
                                             <th>Autor</th>
                                             <th>Cantidad</th>
-                                            <th>Agregado</th>
+                                            <th>Mostrado</th>
+                                            <th>Creado</th>
+                                            <th>Acciones</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         @foreach($ejemplares as $ejemplar)
                                         <tr>
-                                            <td>
-                                                <a href="{{ URL::action('EjemplarController@show', $ejemplar->id) }}" class="btn btn-info text-white btn-editar">
-                                                    <i class="cil-search"></i>
-                                                </a>
-                                            </td>
                                             <td>{{$ejemplar->id}}</td>
                                             <td>{{$ejemplar->tipo->nombre}}</td>
                                             <td>{{$ejemplar->biblioteca->nombre}}</td>
-                                            <td>{{$ejemplar->biblioteca->direccion}}</td>
                                             <td>{{$ejemplar->titulo}}</td>
                                             <td>{{$ejemplar->autor}}</td>
                                             <td>{{$ejemplar->cantidad}}</td>
+                                            <td>
+                                                @if($ejemplar->mostrar == 1)
+                                                    SI
+                                                @else
+                                                    NO
+                                                @endif
+                                            </td>
                                             <td>{{$ejemplar->created_at}}</td>
+                                            <td>
+                                                <a href="{{ URL::action('EjemplarController@edit', $ejemplar->id) }}" class="btn btn-info text-white btn-editar">
+                                                    <i class="cil-pencil"></i>
+                                                </a>
+                                                <a class="btn btn-danger text-white btn-eliminar" onclick="eliminarSweet({{$ejemplar->id}})">
+                                                    <i class="cil-trash"></i>
+                                                </a>
+                                                <form id="{{$ejemplar->id}}" action="{{ URL::action('EjemplarController@destroy', $ejemplar->id) }}" method="POST" style="display: none;">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                </form>
+                                            </td>
                                         </tr>
                                         @endforeach
                                     </tbody>
