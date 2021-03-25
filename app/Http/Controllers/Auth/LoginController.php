@@ -26,7 +26,6 @@ class LoginController extends Controller
         Auth::logoutOtherDevices($request->password);
     }
 
-
     use AuthenticatesUsers;
 
     /**
@@ -34,7 +33,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -54,63 +53,7 @@ class LoginController extends Controller
     public function login(request $request){
         $user = User::where('username', $request->input('username'))->get();
         if(count($user) != 1){
-            return redirect('login');
-        }
-
-        $admin =  true;
-        $entra = false;
-        $cooki = "";
-        $guardar = false;
-
-        if($user[0]->hasAnyRole(['super','admin','mod','profesor'])){
-            $entra = true;
-            $admin = false;
-        }else{
-            $navegador = substr($request->input('navegador'), 0, 15);
-            $codigo = $this->randoms(20);
-
-            if($request->input('cookie') != null){
-                $cookie = $request->input('cookie');
-                if($user[0]->cookie1 != null){
-                    if(decrypt($cookie) == ($user[0]->cookie1.$navegador)){
-                        $entra = true;
-                    }
-                }
-                if($user[0]->cookie2 != null && !$entra){
-                    if(decrypt($cookie) == ($user[0]->cookie2.$navegador)){
-                        $entra = true;
-                    }
-                }
-                if($user[0]->cookie1 == null && !$entra){
-                    $cooki = encrypt($codigo.$navegador);
-                    $user[0]->cookie1 = $codigo;
-                    $guardar = true;
-                    $entra = true;
-                }
-                if($user[0]->cookie2 == null && !$entra){
-                    $cooki = encrypt($codigo.$navegador);
-                    $user[0]->cookie2 = $codigo;
-                    $guardar = true;
-                    $entra = true;
-                }
-            }else{
-                if($user[0]->cookie1 == null && !$entra){
-                    $cooki = encrypt($codigo.$navegador);
-                    $user[0]->cookie1 = $codigo;
-                    $guardar = true;
-                    $entra = true;
-                }
-                if($user[0]->cookie2 == null && !$entra){
-                    $cooki = encrypt($codigo.$navegador);
-                    $user[0]->cookie2 = $codigo;
-                    $guardar = true;
-                    $entra = true;
-                }
-            }
-        }
-
-        if(!$entra){
-            return redirect('login')->withErrors(['cookie' => 'El usuario ya se encuentra registrado en dos dispositivos diferentes.']);
+            return back()->withErrors("Por favor verificar los datos ingresados.")->withInput();
         }
 
         $user_data = array(
@@ -118,23 +61,17 @@ class LoginController extends Controller
             'password' => $request->get('password')
         );
 
-
         if(!Auth::attempt($user_data)){
-            return redirect('login');
+            return back()->withErrors("Por favor verifica los datos ingresados.")->withInput();
         }
         
         if ( Auth::check() ) {
-            if($guardar){
-                $user[0]->save();
-            }
-            if($cooki != ""){
-                $request->session()->flash('cookie', $cooki);
-            }
-            if ( Auth::attempt( ['username' => $request->input('username'), 'password' => $request->input('password')]) && $admin) {
+
+            if ( Auth::attempt( ['username' => $request->input('username'), 'password' => $request->input('password')])) {
                 Auth::logoutOtherDevices($request->password);
             }
             
-            return redirect('home');
+            return redirect('/');
         }
     }
 
@@ -144,13 +81,4 @@ class LoginController extends Controller
         return 'username';
     }
 
-    public function randoms($length) {
-        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        $charactersLength = strlen($characters);
-        $randomString = '';
-        for ($i = 0; $i < $length; $i++) {
-            $randomString .= $characters[rand(0, $charactersLength - 1)];
-        }
-        return $randomString;
-    }
 }

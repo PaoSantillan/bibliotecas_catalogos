@@ -10,9 +10,10 @@
 </button>
 <ul class="c-header-nav mfs-auto">
 </ul>
+@auth
 <ul class="c-header-nav">
     <li class="c-header-nav-item">
-        <h6 class="header-nom">¡Hola, !</h6>
+        <h6 class="header-nom"><strong>{{ Auth::user()->nombre }}</strong></h6>
     </li>
     <li class="c-header-nav-item dropdown mr-3">
         <a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button"
@@ -24,7 +25,7 @@
         <div class="dropdown-menu dropdown-menu-right pt-0">
             <div class="dropdown-header bg-light py-2"><strong>Cuenta</strong></div>
             <a class="dropdown-item" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                <i class="c-icon mfe-2 cil-account-logout"></i>Logout
+                <i class="c-icon mfe-2 cil-account-logout"></i>Salir
             </a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 @csrf
@@ -32,4 +33,5 @@
         </div>
     </li>
 </ul>
+@endauth
 

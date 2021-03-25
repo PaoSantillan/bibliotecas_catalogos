@@ -25,7 +25,13 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'nombre', 'username', 'dni', 'email', 'password', 'telefono', 'foto'
+        'nombre',
+        'username',
+        'dni',
+        'email', 
+        'password', 
+        'telefono', 
+        'foto'
     ];
 
     /**
@@ -34,7 +40,8 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 
+        'remember_token',
     ];
 
     /**
@@ -49,6 +56,12 @@ class User extends Authenticatable
     public function roles()
     {
         return $this->belongsToMany(Role::class)->withTimestamps();
+    }
+
+
+    public function assignRole(Role $role)
+    {
+        return $this->roles()->save($role);
     }
 
     public function authorizeRoles($roles)

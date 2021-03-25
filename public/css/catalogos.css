@@ -133,7 +133,7 @@
 */
 
 /**
-* MENÚ LATERAL
+* MENÚ
 */
 
 .c-sidebar-cat{
@@ -238,7 +238,7 @@
     margin: auto;
 }
 
-form.aprobar-form input, form.aprobar-form textarea{
+form.catalogos-form input, form.catalogos-form textarea{
     font-size: 15px;
 }
 
@@ -323,196 +323,12 @@ form .btn-subir{
     margin-left: 20px;
 }
 
-/*---------------------------------------------------------------------------------------------
--- A L U M N O   U I
----------------------------------------------------------------------------------------------*/
-
-.wrap-curso{
-    height: 321px;
-    width: 240px;
-    background: red;
-    border-radius: 5px;
-    position: relative;
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-top: 20px;
-}
-
-.wrap-curso:hover .botones{
-    display: block;
-}
-
-.bg-bio{
-    background: url('../img/bio-100.jpg') no-repeat center center;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-}
-
-.wrap-curso img{
-    position: absolute;
-    bottom: 100px;
-    left: 20px;
-    border-radius: 50%;
-}
-
-.wrap-curso .prof{
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 300;
-    position: absolute;
-    bottom: 70px;
-    left: 20px;
-}
-
-.wrap-curso .curso-nombre{
-    color: #ffffff;
-    font-size: 26px;
-    font-weight: 700;
-    position: absolute;
-    bottom: 30px;
-    left: 20px;
-    border-bottom: 1px solid #ffffff;
-    width: 85%;
-}
-
-.wrap-curso .instit{
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 300;
-    position: absolute;
-    bottom: 10px;
-    left: 20px;
-    
-}
-
-.wrap-curso .etiqueta-num{
-    background: var(--verde);
-    padding: 5px 25px;
-    border-radius: 6px;
-    font-size: 17px;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 700;
-    position: absolute;
-    right: -10px;
-    top: -7px;
-}
-
-.pl-30{
-    padding-left: 30px;
-}
-
-.pl-50{
-    padding-left: 50px;
-}
-
-.fix-ondas-opz{
-    height: 1500px !important;
-}
-
-.mt-30p{
-    margin-top: 30px;
-}
-
-/*------------------------------------------------------------------------ Tablas dinámicas */
-#buscarCurso th, #buscarClase th, #buscarContenidos th{
-    font-size: 15px;
-}
-
-#buscarCurso td, #buscarClase td, #buscarContenidos td{
+/*
+* TABLA
+*/
+#table td, #table td, #table td{
     font-size: 15px;
     vertical-align: middle;
-}
-
-/*---------------------------------------------------- Listar Cursos alumno */
-.item-curso-info{
-    text-decoration: none;
-    color: #171717;
-}
-
-.item-curso-info:hover{
-    text-decoration: none;
-    color: #171717;
-}
-
-.item-curso{
-    padding: 5px;
-    width: 100%;
-    border: 2px solid var(--gris-claro);
-    padding-top: 20px;
-    padding-left: 15px;
-    border-radius: 5px;
-    margin-top: 15px;
-}
-
-.item-curso:hover{
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.199);
-    text-shadow: none;
-    transition: 0.4s ease-in;
-    border-right: 3px solid var(--verde);
-}
-
-.item-curso:not(hover){
-    transition: 0.4s ease-in;
-}
-
-.item-curso:hover .icono-big i{
-    background: var(--verde);
-    color: var(--blanco);
-    transition: 0.4s ease-in;
-}
-
-.item-curso:not(hover) .icono-big i{
-    transition: 0.4s ease-in;
-}
-
-.icono-big i{
-    background: yellow;
-    padding: 8px;
-    border-radius: 50%;
-}
-
-.item-curso h6{
-    font-size: 17px;
-    font-weight: 700;
-    margin-bottom: 0;
-    padding-left: 32px;
-}
-
-.item-curso h6.aux-text{
-    font-size: 15px;
-    font-weight: 300;
-    margin-bottom: 0;
-    padding-left: 32px;
-}
-
-/*---------------------------------------------- Matricular alumnos */
-#matricularAlumno td, #tespera td, #taprobado td{
-    font-size: 15px;
-    vertical-align: center;
-}
-
-#matricularAlumno th, #tespera th, #taprobado th{
-    font-size: 15px;
-}
-
-#matricularAlumno_wrapper label{
-    font-size: 15px !important;
-}
-
-#matricularAlumno_wrapper .dataTables_info{
-    font-size: 13px !important;
-}
-
-.contador-text{
-    font-size: 15px;
-    color: var(--verde-dark);
-}
-
-.btn-small-round{
-    border-radius: 15px;
-    width: auto;
 }
 
 /*
