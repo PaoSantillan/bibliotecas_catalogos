@@ -19,7 +19,7 @@ En el presente proyecto se trabajó con:
 - 7.- Levantar con: php artisan serve
 
 ## Login
-ADMIN:
+ADMIN (Cambiar al desplegar el proyecto):
 - Username: admin
 - Password: SUPERADMIN2021
 

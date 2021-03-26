@@ -24,5 +24,15 @@ class UserSeeder extends Seeder
         ]);
 
         $user->roles()->attach(Role::where('name', 'super')->first());
+
+        $user = User::create([
+            "nombre" => "Fabiana Bustos",
+            "email" => "fbustos@catamarcaciudad.gob.ar",
+            "username" => "fbustos",
+            "dni" => "33333332",
+            "password" => Hash::make('FBUSTOS2021')
+           ]);
+   
+        $user->roles()->attach(Role::where('name', 'admin')->first());
     }
 }
