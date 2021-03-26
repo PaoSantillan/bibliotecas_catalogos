@@ -1,5 +1,8 @@
 
 ## Plataforma Catálogos - Cultura Catamarca
+
+- Guía de uso: https://docs.google.com/document/d/1bjZrJqzokeKkik1cCoZIHR4ZOFS_F8FVh-CGSJmFnp4/edit?usp=sharing
+
 En el presente proyecto se trabajó con:
 
 - Laravel versión 5.7.*
