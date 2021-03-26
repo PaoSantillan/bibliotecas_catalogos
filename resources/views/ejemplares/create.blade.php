@@ -45,6 +45,8 @@
                                     <input type="text" class="form-control" name="titulo" id="titulo" placeholder="Ej: Influencia Del Pueblo Arabe En La Argentina" value="{{old('titulo')}}" required>
                                 </div>
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="col-lg-4">
                                 <div class="mb-3">
                                     <label for="autor" class="form-label">Autor </label>
@@ -57,18 +59,10 @@
                                     <input type="number" class="form-control" name="cantidad" id="cantidad" aria-describedby="" value="{{old('cantidad')}}" required>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-lg-4">
                                 <div class="mb-3">
                                     <label for="observaciones" class="form-label">Observaciones </label>
                                     <input type="text" class="form-control" name="observaciones" id="observaciones" placeholder="Ej: no posee contratapa" aria-describedby="" value="{{old('observaciones')}}" >
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="mb-3">
-                                    <label for="descripcion" class="form-label">Descripción </label>
-                                    <input type="text" class="form-control" name="descripcion" id="descripcion" value="{{old('descripcion')}}" aria-describedby="">
                                 </div>
                             </div>
                         </div>
@@ -128,6 +122,14 @@
                                         <option value="SI">SI</option>
                                         <option value="NO">NO</option>
                                     </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="mb-3">
+                                    <label for="descripcion" class="form-label">Descripción </label>
+                                    <textarea id="textarea" rows="5" class="form-control" name="descripcion" id="descripcion "aria-describedby="descripurlHelp"></textarea>
                                 </div>
                             </div>
                         </div>

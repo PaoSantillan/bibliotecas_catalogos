@@ -23,7 +23,7 @@ class CreateEjemplaresTable extends Migration
             $table->string('autor')->nullable();
             $table->string('titulo')->nullable();
             $table->string('observaciones')->nullable();
-            $table->string('descripcion')->nullable();
+            $table->text('descripcion')->nullable();
             $table->integer('dia')->nullable();
             $table->integer('mes')->nullable();
             $table->integer('anio')->nullable();
