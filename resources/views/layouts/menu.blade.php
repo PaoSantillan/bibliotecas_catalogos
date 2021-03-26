@@ -34,7 +34,7 @@
         <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/ejemplares/crear"><span class="c-sidebar-nav-icon"></span> Crear ejemplar</a></li>
     </ul>
 </li>
-@if(Auth::user()->hasRole('admin'))
+@if(Auth::user()->hasRole('admin') || Auth::user()->hasRole('super'))
 <li class="c-sidebar-nav-item c-sidebar-nav-dropdown
     {{ request()->is('usuarios/*') ? 'c-show' : '' }}">
     <a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
